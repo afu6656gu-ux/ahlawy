@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>أهلاوي 🦅❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(45deg, #ff0000, #8b0000);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      background-color: #8b0000;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #b30000;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .match-card {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .match-card:hover {
+      transform: scale(1.02);
+    }
+
+    .match-card h3 {
+      margin-bottom: 10px;
+      color: #8b0000;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #ff3333, #b30000);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 17px;
+      margin-top: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .whatsapp a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .whatsapp a:hover {
+      background-color: #1da851;
+    }
+
+    .blinking {
+      color: #b30000;
+      font-size: 20px;
+      margin-top: 30px;
+      animation: blink 1.5s infinite;
+      font-weight: bold;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>أهلاوي 🦅❤️</header>
+
+  <nav>
+    <a onclick="showPage('home')">الرئيسية</a>
+    <a onclick="showPage('matches')">موعد المباريات</a>
+    <a onclick="showPage('booking')">المباريات المتاحة</a>
+    <a onclick="showPage('support')">الدعم</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>مرحباً بك في موقع أهلاوي</h2>
+    <p>تابع مباريات الأهلي واحجز تذكرتك بكل سهولة.</p>
+    <div class="blinking">الموقع تجريبي - تحت الإنشاء ⚠️</div>
+  </section>
+
+  <section id="matches">
+    <h2>موعد مباريات الأهلي القادمة</h2>
+
+    <div class="match-card">
+      <h3>الأهلي × مودرن سبورت</h3>
+      <p>8 أغسطس - 9:00 مساءً - ستاد القاهرة</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+
+    <div class="match-card">
+      <h3>الأهلي × فاركو</h3>
+      <p>15 أغسطس - 9:00 مساءً - ستاد القاهرة الدولي</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+
+    <div class="match-card">
+      <h3>الأهلي × غزل المحلة</h3>
+      <p>25 أغسطس - 6:00 مساءً - ستاد غزل المحلة</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+
+    <div class="match-card">
+      <h3>الأهلي × بيراميدز</h3>
+      <p>30 أغسطس - ستاد القاهرة الدولي</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+
+    <div class="match-card">
+      <h3>الأهلي × إنبي</h3>
+      <p>14 سبتمبر - 8:00 مساءً - ستاد المقاولون العرب</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+
+    <div class="match-card">
+      <h3>الأهلي × سيراميكا</h3>
+      <p>19 سبتمبر - 8:00 مساءً - ستاد القاهرة الدولي</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+
+    <div class="match-card">
+      <h3>الأهلي × حرس الحدود</h3>
+      <p>23 سبتمبر - 5:00 مساءً - ستاد الكلية الحربية</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+
+    <div class="match-card">
+      <h3>الأهلي × الزمالك</h3>
+      <p>29 سبتمبر - 8:00 مساءً - ستاد القاهرة الدولي</p>
+      <p>منقول على: أون تايم سبورت</p>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>مباريات متاحة للحجز</h2>
+
+    <div class="match-card">
+      <h3>الأهلي × مودرن سبورت</h3>
+      <p>8 أغسطس - 9:00 مساءً - ستاد القاهرة</p>
+      <button class="btn" onclick="window.open('https://www.tazkarti.com', '_blank')">احجز الآن</button>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>الدعم الفني</h2>
+    <p>للتواصل مع الدعم الفني مباشرة عبر واتساب:</p>
+    <div class="whatsapp">
+      <a href="https://wa.me/201234567890" target="_blank">اضغط هنا للتواصل عبر واتساب</a>
+    </div>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(pageId).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
